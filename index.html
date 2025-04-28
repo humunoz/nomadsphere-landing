@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NomadSphere - Coming Soon</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script defer src="countdown.js"></script>
+  <script defer src="counter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>NomadSphere is coming soon...</h1>
+    <p>Where borders end, the journey begins.</p>
+    <div id="countdown"></div>
+
+    <form id="contact-form" action="#" method="POST">
+      <h2>Join Our Community</h2>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="country" placeholder="Your Country" required>
+      <select name="interest" required>
+        <option value="">Select Interest</option>
+        <option value="Travel">Travel</option>
+        <option value="Remote Work">Remote Work</option>
+        <option value="Culture">Culture</option>
+        <option value="Adventure">Adventure</option>
+      </select>
+      <textarea name="message" placeholder="Your Message (optional)"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="visit-counter">
+      Visitors: <span id="visitor-count">0</span>
+    </div>
+
+    <button id="theme-toggle">🌙/☀️</button>
+  </div>
+</body>
+</html>
